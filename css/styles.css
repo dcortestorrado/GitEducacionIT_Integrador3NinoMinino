@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap');
-/* * {
+* {
     border: 1px solid red;
-}  */
+} 
 
 /* Navbar */
 
@@ -145,8 +145,12 @@ i:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
-.subtitulo-footer{
-    font-size: calc(0.8rem + 0.6vw);
+.titulo-footer {
+    font-size: calc(1.4rem + 1vw);
+}
+
+.subtitulo-footer, .redes-footer {
+    font-size: calc(0.8rem + 0.1vw);
 }
 
 .textos-footer{
@@ -164,7 +168,6 @@ i:hover {
 .lista-footer {
     list-style: none;
     padding-left: 0px;
-    font-size: (1rem + 1vw);
     font-weight: semibold;  
 }
 
