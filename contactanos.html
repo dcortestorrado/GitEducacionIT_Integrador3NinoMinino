@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/nino_minino.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Nino Minino - Home</title>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <section class="container-fluid">
+
+            <div class="row mt-2 mb-5 justify-content-center align-items-center">
+
+                <div class="col-8 col-xl-2 d-flex justify-content-center align-items-center">
+                    <img class="dp-logo img-fluid" src="./img/nino_minino.png">
+                </div>
+                
+                <nav class="col-12 col-xl-7 navbar navbar-expand-xl navbar-light">
+                
+                    <div class="container-fluid bg-navbar">
+                
+                        <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+                            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-evenly align-items-center">
+            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./tienda.html">Tienda</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                </li>
+                
+                                <li class="nav-item">
+                                    <a class="nav-link active text-start" href="./contactanos.html">Contáctanos</a>
+                                </li>
+            
+                                <li class="nav-item">
+                                    <a class="nav-link text-start d-xl-none" href="./login.html">Mi cuenta</a>
+                                </li>
+            
+                                <li class="nav-item">
+                                    <a class="nav-link text-start d-xl-none" href="./carrito.html">Carrito</a>
+                                </li>
+                
+                            </ul>
+                
+                        </div>
+                    </div>
+                </nav>
+            
+                <div class="col-2 d-none d-xl-flex flex-row justify-content-evenly">
+            
+                    <div>
+                        <!-- <i class="fas fa-user-check fa-3x img-fluid"></i> -->
+                        <a href="./login.html"><i class="fas fa-user-times no-login fa-3x"></i></a>
+                    </div>
+            
+                    <div>
+                        <a href="./carrito.html"><i class="fas fa-shopping-cart cart fa-3x"></i></a>
+                    </div>
+            
+                </div>
+            
+                
+            </div>
+            
+            <div class="circulo-scroll" onclick="scrollArriba()">
+                <img src="./img/nino_minino.png" class="logo-scroll d-block mx-auto">
+            </div>
+            
+        </section>
+    </header>
+
+    <!-- Contáctanos -->
+    <div class="row d-flex justify-content-center align-items-center w-100">
+
+        <div class="col-10 col-sm-8 col-md-6 col-lg-5   mx-auto">
+    
+            <form id="formularioContactanos" action="">
+    
+                <div class="mb-5">
+                    <label class="form-label fw-bold">NOMBRE COMPLETO</label>
+                    <input type="text" class="form-control" id="nombreInput" maxlength="50" name="nombre">
+                    <span class="text-danger fw-bold visibility-hidden span-font" id="nombreSpan">Ingresa tu nombre completo.</span> 
+                </div>
+    
+                <div class="mb-5">
+                    <label class="form-label fw-bold">CORREO ELECTRÓNICO</label>
+                    <input type="text" class="form-control" id="correoInput" maxlength="40" name="correo">
+                    <span class="text-danger fw-bold visibility-hidden span-font" id="correoSpan">Ingresa tu correo electrónico.</span>               
+                </div>
+    
+                <div class="mb-5">
+                    <label class="form-label fw-bold">CELULAR</label>
+                    <input type="text" class="form-control" formControlName="telefonoContacto" aria-describedby="PhoneHelp" id="telefonoInput" name="telefono" maxlength="15">
+                    <span class="text-danger fw-bold visibility-hidden span-font" id="telefonoSpan" >Ingresa un número válido.</span>     
+                </div>
+                
+                <div class="mb-5">
+                    <label class="form-label fw-bold">TU MENSAJE:</label>
+                    <textarea rows='10' maxlength="600" class="form-control" id="mensajeInput" name="mensaje"></textarea>
+                    <span class="text-danger fw-bold visibility-hidden span-font" id="mensajeSpan">Deja tu mensaje.</span>               
+                </div>
+    
+                <button type="submit" class="btn btn-dark button-font mb-5 text-center fw-bold">ENVIAR</button>
+    
+            </form>       
+        </div>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        
+        <div class="container-fluid">
+            <div class="row contenedor-footer">
+                <div class="col-lg-4 col-12 mt-5 text-center d-flex flex-column justify-content-center">
+                    <h2 class="titulo-potaje mb-3 py-0 fw-bold">NINO MININO</h2>
+                    <p class="subtitulo-footer fw-bold my-0 py-0 text-center">P R O D U C T O S &nbsp; C O N &nbsp; P R O P Ó S I T O</p>
+                    <p class="subtitulo-footer fw-bold my-0 py-0 text-center">P A R A &nbsp; P E L U D O S &nbsp; E C O L Ó G I C O S</p>
+                </div>
+                <div class="col-lg-4 col-12 mt-5 mb-4 text-center bg-dark">
+                    <h3 class="horarios text-white mt-5">HORARIOS</h3>
+                    <p class="textos-footer fw-bold pt-4 text-white">LUNES - SÁBADO</p>
+                    <p class="textos-footer text-white">8:00 AM - 6:00 PM</p>
+                    <p class="textos-footer fw-bold text-white">DOMINGOS - FESTIVOS</p>
+                    <p class="textos-footer text-white mb-5">8:00 AM - 2:00 PM</p>
+                </div>
+                <div class="col-12 col-lg-4 mt-5 mb-2 d-flex flex-column justify-content-center align-items-center text-center">
+                    <h3 class="redes fw-semibold mt-4">REDES</h3>
+                    <div class="mx-auto">
+                        <ul class="lista-footer text-start mt-4">
+                            <li><a href="https://wa.me/573125422036" target="_blank"><i class="fab fa-whatsapp fa-lg me-2"></i>WHATSAPP</a></li>
+                            <li><a href="https://t.me/PauGTNino" target="_blank"><i class="far fa-paper-plane fa-lg me-2"></i>TELEGRAM</a></li>
+                            <li><a href="https://www.instagram.com/nino.minino.shop" target="_blank"><i class="fab fa-instagram fa-lg me-2"></i>INSTAGRAM</a></li>
+                            <li><a href="https://www.facebook.com/Nino.Minino.Shop" target="_blank"><i class="fab fa-facebook-square fa-lg me-2"></i>FACEBOOK</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="copy pb-3 fw-bold">C&nbsp;O&nbsp;P&nbsp;Y&nbsp;R&nbsp;I&nbsp;G&nbsp;H&nbsp;T&nbsp; © 2&nbsp;0&nbsp;2&nbsp;3 - D&nbsp;A&nbsp;N&nbsp;I&nbsp;E&nbsp;L&nbsp; C&nbsp;O&nbsp;R&nbsp;T&nbsp;É&nbsp;S</p>
+        </div>
+    
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./script/scrollTop.js"></script>
+<script src="./script/scriptContactanos.js"></script>
+</body>
+</html>

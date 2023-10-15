@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap');
+/* * {
+    border: 1px solid red;
+}  */
+
+/* Navbar */
+
+.bg-navbar{
+    /* background-color: #6fcaca; */
+    /* background-color: #57d88d; */
+    background-color: #000000dc;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+    border-color: #000000;
+}
+
+.container-fluid, .container {
+    font-family: 'Cinzel', serif;
+    font-size: 25px; 
+    font-weight: 500;
+    color: #000000 !important;
+}
+
+.dp-logo{
+    width: 300px;
+}
+
+.no-login{
+    /* color: #6fcaca; */
+    /* color: #57d88d; */
+    color: #9ecb50;
+}
+
+.cart{
+    color: #9ecb50;
+}
+
+.navbar-nav{
+    margin: auto;
+}
+
+.navbar-nav .active {
+    color: white !important;
+}
+
+.navbar-nav .active:hover {
+    color: #000000 !important;
+    background-color: none !important;
+}
+
+.navbar-nav li {
+    font-size: calc(1rem + 1vw);
+}
+
+    @media (min-width: 1500px) {
+        .title {
+        font-size: 4rem;
+    }
+}
+
+.navbar-nav .nav-item{
+    background-color: transparent;
+    /* border-radius: 20px; */
+    transition: background-color 0.5s;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-item:hover{
+    background-color: #d7efef;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    color: #b8d474;
+}
+
+.circulo-scroll{
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    opacity: 0.5;
+    background-color: #a9ff13;
+}
+
+.circulo-scroll:hover{
+    cursor: pointer;
+}
+
+.logo-scroll{
+    width: 100%;
+    height: 100%;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+/* Home */
+
+.titulos, .parrafo-span {
+    font-family: 'Cinzel', serif;
+}
+
+.titulos{
+    font-size: 50px;
+    text-decoration: underline #22a4ad 2px;
+    text-underline-position: under;
+}
+
+.parrafos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.divs-principales{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-carousel {
+    max-height:  600px;
+    min-height: 220px;
+}
+
+.span-link {
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* Footer */
+
+.contenedor-footer, .copy{
+    background-color: #b8d474;
+    margin-bottom: 0;
+}
+
+.subtitulo-footer, .textos-footer, .horarios, .copy, .redes, .lista-footer{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitulo-footer{
+    font-size: 1.3rem;
+}
+
+.textos-footer{
+    font-size: 18px;
+}
+
+.horarios, .redes{
+    font-size: 25px;
+}
+
+.copy{
+    font-size: 13px;
+}
+
+.lista-footer {
+    list-style: none;
+    padding-left: 0px;
+    font-size: (1rem + 1vw);
+    font-weight: semibold;  
+}
+
+li a, li a:link, li a:hover, li a:active, li a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.lista-footer li a{
+    margin-bottom: 10px;
+    text-decoration: underline 3px transparent;
+    transition: text-decoration 1s;
+    display: inline-block;
+}
+
+li a:hover{
+    text-decoration-color: #000000 !important;
+    cursor: pointer;   
+}
+
+/* Contáctanos */
+
+textarea {
+    resize: none;
+}
+
+.form-label, .form-control, .button-font, .span-font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.span-font {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.btn-verde{
+    background-color: #6fcaca;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.display-none {
+    display: none;
+}
+/* Nosotros */
+
+.titulos-nosotros{
+    font-size: 60px;
+    text-decoration: underline #6fcaca 2px;
+    text-underline-position: under;
+}
+
+/* Login */
+
+.form-login, .form-crear{
+    border: 1px solid #b1b1b1;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.forgot{
+    text-decoration: none;
+}
