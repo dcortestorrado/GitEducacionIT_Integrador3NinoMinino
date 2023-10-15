@@ -102,6 +102,11 @@ i:hover {
 
 /* Home */
 
+.logo-home {
+    max-width: 80%;
+}
+
+
 .titulos, .parrafo-span {
     font-family: 'Cinzel', serif;
 }
